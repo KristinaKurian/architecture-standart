@@ -88,7 +88,7 @@
         <mxCell id="111" edge="1" parent="1" source="34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#70AD47;dashed=1;fontSize=10;labelBackgroundColor=#FFFFFF;" target="31" value="Получает задания&lt;br&gt;на отправку СМС">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="112" edge="1" parent="1" source="35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#70AD47;dashed=1;fontSize=10;labelBackgroundColor=#FFFFFF;" target="24" value="Отправляет СМС&lt;br&gt;API + retry">
+        <mxCell id="112" edge="1" parent="1" source="34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#70AD47;dashed=1;fontSize=10;labelBackgroundColor=#FFFFFF;" target="24" value="Отправляет СМС&lt;br&gt;API + retry">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="113" edge="1" parent="1" source="24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#7F7F7F;fontSize=10;labelBackgroundColor=#FFFFFF;" target="11" value="СМС-код и уведомления">
@@ -108,12 +108,6 @@
         </mxCell>
         <mxCell id="300" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F4F4F4;fontColor=#333333;fontSize=10;strokeColor=#999999;align=left;spacing=8;verticalAlign=top;" value="&lt;b&gt;Transactional Outbox:&lt;/b&gt; заявка и задание на интеграцию записываются атомарно в PostgreSQL. Integration Worker повторяет временные ошибки, а операции с исчерпанными попытками переводит в ручной разбор. Такой вариант обеспечивает сохранность заявок и идемпотентность без внедрения нового брокера сообщений в срок MVP.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Ключевой принцип:&lt;/b&gt; только ABS Adapter API взаимодействует с внутренними интерфейсами АБС. Сайт, интернет-банк и Deposit Application API не получают прямого доступа к Oracle.&lt;/div&gt;" vertex="1">
           <mxGeometry height="145" width="1740" x="710" y="1411" as="geometry" />
-        </mxCell>
-        <mxCell id="FdP48Mi4Nkdms5scelIP-301" edge="1" parent="1" source="34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#70AD47;dashed=1;fontSize=10;labelBackgroundColor=#FFFFFF;" target="35" value="">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1170" y="1230" as="sourcePoint" />
-            <mxPoint x="3310" y="490" as="targetPoint" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="35" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E2F0D9;fontColor=#000000;fontSize=12;strokeColor=#70AD47;strokeWidth=2;align=center;verticalAlign=middle;" value="Observability&lt;br&gt;&lt;b&gt;логи, метрики, аудит и alerts&lt;/b&gt;&lt;br&gt;&lt;br&gt;Correlation ID, технические и бизнес-метрики, контроль SLA и зависших заявок." vertex="1">
           <mxGeometry height="190" width="430" x="2140" y="1130" as="geometry" />
