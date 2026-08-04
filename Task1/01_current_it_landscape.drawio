@@ -1,6 +1,6 @@
-<mxfile host="Electron" agent="ChatGPT" compressed="false">
+<mxfile host="Electron" agent="" compressed="false">
   <diagram id="it-landscape-as-is" name="IT Landscape AS-IS">
-    <mxGraphModel dx="1212" dy="736" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2750" pageHeight="1550" math="0" shadow="0">
+    <mxGraphModel dx="1717" dy="1043" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2750" pageHeight="1550" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -284,7 +284,7 @@
           <mxGeometry height="100" width="189" x="1998" y="215" as="geometry" />
         </mxCell>
         <mxCell id="211" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DDEBF7;fontColor=#000000;fontSize=10;strokeColor=#5B9BD5;align=center;verticalAlign=middle;" value="Сайт банка&lt;br&gt;PHP + React.js&lt;br&gt;&lt;b&gt;собственная разработка&lt;/b&gt;" vertex="1">
-          <mxGeometry height="70" width="189" x="318" y="447" as="geometry" />
+          <mxGeometry height="55" width="189" x="318" y="347" as="geometry" />
         </mxCell>
         <mxCell id="212" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4D6;fontColor=#000000;fontSize=10;strokeColor=#ED7D31;align=center;verticalAlign=middle;" value="Интернет-банк&lt;br&gt;ASP.NET MVC 4.5 + MS SQL&lt;br&gt;&lt;b&gt;платформа подрядчика&lt;/b&gt;" vertex="1">
           <mxGeometry height="80" width="189" x="1138" y="347" as="geometry" />
@@ -334,8 +334,8 @@
         <mxCell id="271" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontColor=#666666;fontSize=10;strokeColor=#A6A6A6;dashed=1;align=center;verticalAlign=middle;" value="Отдельная прикладная система в текущем состоянии отсутствует.&lt;br&gt;Команда анализирует и планирует цифровую трансформацию; MVP и целевые решения относятся к TO-BE." vertex="1">
           <mxGeometry height="89" width="2074" x="318" y="1113" as="geometry" />
         </mxCell>
-        <mxCell id="300" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F4F4F4;fontColor=#333333;fontSize=10;strokeColor=#999999;align=left;spacing=8;verticalAlign=top;" value="&lt;b&gt;Легенда:&lt;/b&gt;&lt;div&gt;синий — собственная система банка&lt;/div&gt;&lt;div&gt;оранжевый — платформа подрядчика&lt;/div&gt;&lt;div&gt;жёлтый — приложение и ручные инструменты (Excel/Email)&lt;/div&gt;&lt;div&gt;серый — внешняя система.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="135" width="2640" x="30" y="1240" as="geometry" />
+        <mxCell id="300" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F4F4F4;fontColor=#333333;fontSize=10;strokeColor=#999999;align=left;spacing=8;verticalAlign=top;" value="&lt;b&gt;Легенда:&lt;/b&gt; синий — собственная система банка; оранжевый — платформа подрядчика; жёлтый — приложение и ручные инструменты (Excel/Email); серый — внешняя система.&lt;br&gt;&lt;br&gt;&lt;b&gt;Допущение:&lt;/b&gt; названия capabilities восстановлены по тексту задания, поскольку изображение исходной Business Capability Map отсутствовало. На карте показано только AS-IS." vertex="1">
+          <mxGeometry height="135" width="2640" x="30" y="1241" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
