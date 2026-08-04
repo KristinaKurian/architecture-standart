@@ -1,0 +1,8 @@
+# draw.io temporary and backup files
+*.bkp
+.$*
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
